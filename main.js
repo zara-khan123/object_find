@@ -13,11 +13,11 @@ function setup(){
 function draw()
 {
     image(video, 0, 0, 480, 380);
-    f(status != "")
+    if(status != "")
     {objectDetector.detect(video, gotResults)};
     for (i = 0; i < objects.length; i++ ) 
     {
-        document.getElementById("status").innerHTML = "Status: object detected";
+        document.getElementById("status1").innerHTML = "Status: object detected";
         document.getElementById("number_of_objects").innerHTML = "number of objects detected are: "+objects.length;
         fill('#ff0000');
         percent = floor(objects[i].confidence * 100);
@@ -28,7 +28,7 @@ function draw()
 
     }
 }
-}
+
 
 function start()
 {

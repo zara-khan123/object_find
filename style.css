@@ -37,3 +37,15 @@ canvas{
     margin-top: 130px;
     box-shadow: 5px 5px 5px white;
 }
+
+.sub-heading
+{
+    font-size: 18px;
+    color: rgb(27, 22, 49);
+    margin-top: -4px;
+}
+
+#status1
+{
+    margin-right: 100px;
+}
